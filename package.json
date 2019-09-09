@@ -1,6 +1,5 @@
 {
   "name": "OLSKReloadButton",
-  "private": true,
   "main": "main.svelte",
   "files": [
   	"i18n*",
