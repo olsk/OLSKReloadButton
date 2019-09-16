@@ -1,13 +1,13 @@
 import { throws, deepEqual } from 'assert';
 
-const browser = new OLSKBrowser();
-const kDefaultRoutePath = '/modules/OLSKReloadButton';
+const kDefaultRoute = require('./controller.js').OLSKControllerRoutes().shift();
+
 const OLSKReloadButton = '.OLSKReloadButton';
 
 describe('OLSKReloadButtonDiscovery', function testOLSKReloadButtonDiscovery() {
 
 	before(function() {
-		return browser.visit(kDefaultRoutePath);
+		return browser.visit(kDefaultRoute.OLSKRoutePath);
 	});
 	
 	it('on startup', function() {
@@ -27,7 +27,7 @@ describe('OLSKReloadButtonLanguage', function testOLSKReloadButtonLanguage() {
 			};
 
 			before(function() {
-				return browser.visit(kDefaultRoutePath);
+				return browser.visit(kDefaultRoute.OLSKRoutePath);
 			});
 
 			it('if inputData', async function() { 
