@@ -32,7 +32,7 @@ describe('OLSKReloadButtonLanguage', function testOLSKReloadButtonLanguage() {
 
 			it('if inputData', async function() { 
 				browser.assert.attribute(OLSKReloadButton, 'title', uLocalized('OLSKReloadButtonText'));
-				deepEqual(browser.query(OLSKReloadButton).textContent, '');
+				browser.assert.text(OLSKReloadButton, '');
 			});
 
 		});
