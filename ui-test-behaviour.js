@@ -7,7 +7,7 @@ const OLSKReloadButton = '.OLSKReloadButton';
 describe('OLSKReloadButtonDiscovery', function testOLSKReloadButtonDiscovery() {
 
 	before(function() {
-		return browser.visit(kDefaultRoute.OLSKRoutePath);
+		return browser.OLSKVisit(kDefaultRoute);
 	});
 	
 	it('on startup', function() {
@@ -27,7 +27,7 @@ describe('OLSKReloadButtonLanguage', function testOLSKReloadButtonLanguage() {
 			};
 
 			before(function() {
-				return browser.visit(kDefaultRoute.OLSKRoutePath);
+				return browser.OLSKVisit(kDefaultRoute);
 			});
 
 			it('if inputData', async function() { 
