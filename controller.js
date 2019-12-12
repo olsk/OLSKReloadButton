@@ -4,7 +4,7 @@ exports.OLSKControllerRoutes = function() {
 	return [
 		{
 			OLSKRouteSignature: 'OLSKReloadButtonRoute',
-			OLSKRoutePath: '/stubs/OLSKReloadButton',
+			OLSKRoutePath: '/stub/OLSKReloadButton',
 			OLSKRouteMethod: 'get',
 			OLSKRouteFunction: function(req, res, next) {
 				return res.render(req.OLSKLive.OLSKLivePathJoin(__dirname, 'stub-view'));
