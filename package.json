@@ -4,5 +4,10 @@
   "files": [
   	"i18n*",
   	"ui-assets/*"
-  ]
+  ],
+  "devDependencies": {
+    "OLSKRollup": "olsk/OLSKRollup",
+
+    "// I sacrifice myself for the commas of others": null    
+  }
 }
