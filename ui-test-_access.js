@@ -2,6 +2,8 @@ const kDefaultRoute = require('./controller.js').OLSKControllerRoutes().shift();
 
 Object.entries({
 	OLSKReloadButton: '.OLSKReloadButton',
+
+	OLSKReloadButtonImage: '.OLSKReloadButtonImage',
 }).map(function (e) {
 	return global[e.shift()]  = e.pop();
 });
@@ -14,6 +16,10 @@ describe('OLSKReloadButton_Access', function () {
 
 	it('shows OLSKReloadButton', function () {
 		browser.assert.elements(OLSKReloadButton, 1);
+	});
+
+	it('shows OLSKReloadButtonImage', function () {
+		browser.assert.elements(OLSKReloadButtonImage, 1);
 	});
 
 });

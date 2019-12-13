@@ -14,4 +14,13 @@ describe('OLSKReloadButton_Misc', function () {
 		browser.assert.hasClass(OLSKReloadButton, 'OLSKLayoutButtonNoStyle')
 	});
 
+	describe('OLSKReloadButtonImage', function testOLSKReloadButtonImage () {
+
+		it('sets src', function () {
+			// deepEqual(browser.html(EMTTrackFooterStorageButtonImage).match('_OLSKSharedCloud').length, 1)
+			browser.assert.elements('#_OLSKSharedReload', 1);
+		});
+
+	});
+
 });
