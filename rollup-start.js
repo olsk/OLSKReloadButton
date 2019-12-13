@@ -1,4 +1,4 @@
-import RollupStart from './stub-view.svelte';
+import RollupStart from './main.svelte';
 
 const OLSKReloadButton = new RollupStart({
 	target: document.body,
