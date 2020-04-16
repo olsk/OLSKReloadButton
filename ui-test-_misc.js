@@ -14,7 +14,7 @@ describe('OLSKReloadButton_Misc', function () {
 		browser.assert.hasClass(OLSKReloadButton, 'OLSKLayoutButtonNoStyle')
 	});
 
-	describe('OLSKReloadButtonImage', function testOLSKReloadButtonImage () {
+	describe('OLSKReloadButtonImage', function test_OLSKReloadButtonImage () {
 
 		it('sets src', function () {
 			browser.assert.elements(`${ OLSKReloadButtonImage } #_OLSKSharedCloud`, 1);
