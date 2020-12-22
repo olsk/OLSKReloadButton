@@ -6,12 +6,12 @@ describe('OLSKReloadButton_Misc', function () {
 		browser.assert.hasClass(OLSKReloadButton, 'OLSKToolbarButton')
 	});
 
-	it('classes OLSKLayoutElementTappable', function () {
-		browser.assert.hasClass(OLSKReloadButton, 'OLSKLayoutElementTappable')
+	it('classes OLSKDecorTappable', function () {
+		browser.assert.hasClass(OLSKReloadButton, 'OLSKDecorTappable')
 	});
 	
-	it('classes OLSKLayoutButtonNoStyle', function () {
-		browser.assert.hasClass(OLSKReloadButton, 'OLSKLayoutButtonNoStyle')
+	it('classes OLSKDecorButtonNoStyle', function () {
+		browser.assert.hasClass(OLSKReloadButton, 'OLSKDecorButtonNoStyle')
 	});
 
 	describe('OLSKReloadButtonImage', function test_OLSKReloadButtonImage () {
