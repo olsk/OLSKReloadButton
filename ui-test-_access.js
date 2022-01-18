@@ -5,7 +5,7 @@ Object.entries({
 
 	OLSKReloadButtonImage: '.OLSKReloadButtonImage',
 }).map(function (e) {
-	return global[e.shift()]  = e.pop();
+	return global[e.shift()] = e.pop();
 });
 
 describe('OLSKReloadButton_Access', function () {
