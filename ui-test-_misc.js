@@ -2,6 +2,10 @@ const kDefaultRoute = require('./controller.js').OLSKControllerRoutes().shift();
 
 describe('OLSKReloadButton_Misc', function () {
 
+	before(function() {
+		return browser.OLSKVisit(kDefaultRoute);
+	});
+
 	it('classes OLSKToolbarButton', function () {
 		browser.assert.hasClass(OLSKReloadButton, 'OLSKToolbarButton')
 	});
@@ -17,7 +21,7 @@ describe('OLSKReloadButton_Misc', function () {
 	describe('OLSKReloadButtonImage', function test_OLSKReloadButtonImage () {
 
 		it('sets src', function () {
-			browser.assert.elements(`${ OLSKReloadButtonImage } #_OLSKSharedCloud`, 1);
+			browser.assert.elements(`${ OLSKReloadButtonImage } #_OLSKSharedReload`, 1);
 		});
 
 	});
