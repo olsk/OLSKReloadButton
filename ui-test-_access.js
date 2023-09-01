@@ -15,11 +15,11 @@ describe('OLSKReloadButton_Access', function () {
 	});
 
 	it('shows OLSKReloadButton', function () {
-		browser.assert.elements(OLSKReloadButton, 1);
+		return browser.assert.elements(OLSKReloadButton, 1);
 	});
 
 	it('shows OLSKReloadButtonImage', function () {
-		browser.assert.elements(OLSKReloadButtonImage, 1);
+		return browser.assert.elements(OLSKReloadButtonImage, 1);
 	});
 
 });

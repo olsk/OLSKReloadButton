@@ -15,7 +15,7 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 		});
 	
 		it('localizes title', function() {
-			browser.assert.attribute(OLSKReloadButton, 'title', uLocalized('OLSKReloadButtonText'));
+			return browser.assert.attribute(OLSKReloadButton, 'title', uLocalized('OLSKReloadButtonText'));
 		});
 	
 	});
